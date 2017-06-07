@@ -24,6 +24,6 @@ app.get("/:date", function(req, res) {
 	res.send(JSON.stringify(output));
 });
 
-app.listen(8080, function() {
+app.listen(process.env.PORT || 8080, function() {
 	console.log("start!");
 });
